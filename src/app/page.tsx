@@ -1,101 +1,165 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col items-center justify-center p-10 bg-white min-h-screen">
+      <p className="text-black">⭐⭐⭐⭐⭐ Loved by 1,000,000+ creators</p>
+      <h1 className="text-4xl font-bold text-center text-black">
+        Fund your creative work
+      </h1>
+      <p className="text-blach text-lg text-center mt-2 text-black">
+        Accept support. Start a membership. Setup a shop. It's easier than you
+        think.
+      </p>
+      <button className="mt-5 bg-yellow-400 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-500">
+        Start my page
+      </button>
+      <p className="text-gray-500 mt-2 text-black">
+        It's free and takes less than a minute!
+      </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            Cara is building a new platform for artists
+          </p>
+          <p className="text-gray-500">❤️ 8,780 supporters</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            Kaleigh Cohen is creating indoor cycling and strength workouts on
+            YouTube!
+          </p>
+          <p className="text-gray-500">❤️ 4,488 supporters</p>
+        </div>
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            Teacher Stefano is creating YouTube videos and Podcast
+          </p>
+          <p className="text-gray-500">❤️ 641 supporters</p>
+        </div>
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            The Thrill Of The Thrift is creating thrifting videos
+          </p>
+          <p className="text-gray-500">❤️ 112 supporters</p>
+        </div>
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            Beach Talk Radio is a Dinky Little Podcast
+          </p>
+          <p className="text-gray-500">❤️ 1,805 supporters</p>
+        </div>
+        <div className="bg-white shadow-lg p-5 rounded-lg">
+          <p className="font-semibold text-black">
+            Simple Politics is helping people have better conversations about
+            politics
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-16 p-10 bg-gray-50 rounded-3xl shadow-lg max-w-3xl">
+        <p className="text-gray-500 uppercase text-center">Support</p>
+        <h2 className="text-3xl font-bold text-center text-black">
+          Give your audience an easy way to say thanks.
+        </h2>
+        <p className="text-black text-center mt-2">
+          Buy Me a Coffee makes supporting fun and easy. In just a couple of
+          taps, your fans can make the payment (buy you a coffee) and leave a
+          message.
+        </p>
+        <div className="bg-white p-6 rounded-lg shadow-lg mt-6">
+          <h3 className="font-semibold text-lg text-black">
+            Buy Juliet a coffee
+          </h3>
+          <div className="flex items-center mt-2 space-x-2">
+            <button className="bg-red-500 text-white px-3 py-1 rounded-full">
+              1
+            </button>
+            <button className="bg-red-300 text-white px-3 py-1 rounded-full">
+              3
+            </button>
+            <button className="bg-red-200 text-white px-3 py-1 rounded-full">
+              5
+            </button>
+            <button className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">
+              1
+            </button>
+          </div>
+          <input
+            type="text"
+            placeholder="Say something nice..."
+            className="w-full mt-3 p-2 border rounded-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <button className="mt-3 w-full bg-red-500 text-white py-2 rounded-lg font-semibold">
+            Support $3
+          </button>
+        </div>
+        <div className="mt-6 space-y-3">
+          <div className="bg-white p-3 rounded-lg shadow text-sm text-black">
+            Anie bought 10 coffees ☕
+          </div>
+          <div className="bg-white p-3 rounded-lg shadow text-sm text-black">
+            Cathy G bought a coffee. ❤️
+          </div>
+          <div className="bg-white p-3 rounded-lg shadow text-sm text-black">
+            Alex bought 25 coffees Thanks Alex!
+          </div>
+          <div className="bg-white p-3 rounded-lg shadow text-sm text-black">
+            Tony Steel bought 3 coffees. "Absolutely love the show! I'm already
+            waiting for next week's episode, lol. Thank you, and keep doing what
+            you're doing." ❤️
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 p-10 bg-gray-50 rounded-3xl shadow-lg max-w-3xl">
+        <p className="text-gray-500 uppercase text-center">Memberships</p>
+        <h2 className="text-3xl font-bold text-center">
+          Start a membership for your biggest fans.
+        </h2>
+        <p className="text-gray-600 text-center mt-2">
+          Earn a recurring income by accepting monthly or yearly subscriptions.
+          Share exclusive content, or just give them a way to support your work
+          on an ongoing basis.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="font-semibold">Basic membership</h3>
+            <p className="text-gray-500">$5/month</p>
+            <ul className="text-left text-gray-600 list-disc pl-5">
+              <li>33% OFF all my eBooks & courses</li>
+              <li>Access to members-only content</li>
+              <li>Exclusive posts and messages</li>
+            </ul>
+            <button className="mt-3 w-full bg-blue-500 text-white py-2 rounded-lg font-semibold">
+              Join
+            </button>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="font-semibold">Pro membership</h3>
+            <p className="text-gray-500">$15/month</p>
+            <ul className="text-left text-gray-600 list-disc pl-5">
+              <li>Support me on a monthly basis</li>
+              <li>Email alert for new posts</li>
+              <li>Exclusive posts and messages</li>
+            </ul>
+            <button className="mt-3 w-full bg-blue-500 text-white py-2 rounded-lg font-semibold">
+              Join
+            </button>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="font-semibold">Advanced membership</h3>
+            <p className="text-gray-500">$25/month</p>
+            <ul className="text-left text-gray-600 list-disc pl-5">
+              <li>Highly printable journal pages</li>
+              <li>Email alert for new posts</li>
+              <li>Work in progress updates</li>
+            </ul>
+            <button className="mt-3 w-full bg-blue-500 text-white py-2 rounded-lg font-semibold">
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
