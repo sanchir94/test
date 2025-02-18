@@ -1,4 +1,16 @@
+import { Sree_Krushnadevaraya } from "next/font/google";
 import React from "react";
+
+export type Icon = string;
+export type Title = string;
+export type Description = string;
+export type TitleClass = string;
+interface FeatureProps {
+  icon: Icon;
+  title: Title;
+  description: Description;
+  titleClass: TitleClass;
+}
 
 export default function Home() {
   return (
@@ -71,8 +83,10 @@ export default function Home() {
             taps, your fans can make the payment (buy you a coffee) and leave a
             message.
           </p>
-
-          <div className="relative mt-8 bg-white p-6 rounded-xl shadow-lg mx-auto w-[386px] h-[359px]">
+          <div>
+            <img src="screenshot1.png" />
+          </div>
+          {/* <div className="relative mt-8 bg-white p-6 rounded-xl shadow-lg mx-auto w-[386px] h-[359px]">
             <h2 className="text-lg font-semibold text-black">
               Buy Juliet a coffee
             </h2>
@@ -137,7 +151,7 @@ export default function Home() {
                 episode, lol. Thank you and keep doing what you're doing.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -152,7 +166,13 @@ export default function Home() {
             subscriptions. Share exclusive content, or just give them a way to
             support your work on an ongoing basis.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
+          <div className="mt-5 flex  w-[936px] h-[442px]">
+            <img
+              src="screenshot2.png"
+              className="items-center justify-center"
+            />
+          </div>
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
             <div className="bg-white p-6 rounded-lg w-[270px] h-[387px] shadow-lg text-center">
               <img
                 src="https://cdn.buymeacoffee.com/assets/img/homepage/images/membership_banner_1.png"
@@ -201,7 +221,7 @@ export default function Home() {
                 Join
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg mt-[50px] w-[1128px] h-[834px] p-6">
@@ -219,7 +239,10 @@ export default function Home() {
             for you.
           </p>
         </div>
-        <div className="items-center justify-center flex">
+        <div>
+          <img src="screenshot3.png" />
+        </div>
+        {/* <div className="items-center justify-center flex">
           <div className="w-80 p-4 bg-white rounded-2xl shadow-lg">
             <div className="bg-yellow-300 p-6 rounded-lg relative">
               <span className="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-md font-semibold text-black">
@@ -274,11 +297,11 @@ export default function Home() {
               <span className="text-gray-300">⭐</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="  flex flex-col items-center bg-white rounded-lg shadow-md p-8">
-        <div className="text-center max-w-2xl">
+      <div className="w-[1128px] h-[809.41px]  flex flex-col items-center bg-white rounded-lg shadow-md mt-[50px] p-8">
+        <div className="text-center ">
           <h3 className="text-gray-500 uppercase tracking-widest font-semibold text-sm">
             Posts, Audio & Email
           </h3>
@@ -291,8 +314,10 @@ export default function Home() {
             drive more memberships.
           </p>
         </div>
-
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 items-start">
+        <div>
+          <img src="zurag22.png" className="mt-[50px] w-[936px] h-[481.41px]" />
+        </div>
+        {/* <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 items-start">
           <div className="col-span-2 bg-white shadow-md rounded-xl overflow-hidden relative">
             <img src="aylagch.png" alt="" className="w-full" />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -371,18 +396,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className=" flex justify-center items-center ">
-        <div className="max-w-2xl  p-10  text-center">
-          <h1 className="text-3xl font-bold text-gray-900">
+      <div className="flex justify-center items-center w-full max-w-[1600px] h-[500px]">
+        <div className="p-12 text-center">
+          <h1 className="text-4xl font-bold text-gray-900">
             Designed for creators,
           </h1>
-          <h2 className="text-3xl font-bold text-gray-500">
+          <h2 className="text-4xl font-bold text-gray-500">
             not for businesses.
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left w-full max-w-[1200px] h-[280px]">
             {[
               {
                 text: 'We don\'t call them "customers" or transactions. They are your supporters.',
@@ -401,8 +426,8 @@ export default function Home() {
                 bold: "No more 30-day delays",
               },
             ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <span className="text-xl">✔️</span>
+              <div key={index} className="flex items-start text-lg space-x-4">
+                <span className="text-2xl">✔️</span>
                 <p className="text-black">
                   {item.text.split(item.bold).map((part, i, arr) => (
                     <React.Fragment key={i}>
@@ -416,52 +441,61 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" flex justify-center items-center">
-        <div className="max-w-2xl bg-white p-10 shadow-md rounded-xl text-center">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Make 20% or more,
-          </h1>
-          <h2 className="text-3xl font-bold text-gray-500">
-            compared to other platforms.
-          </h2>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-            {[
-              {
-                text: "Not just a membership Creators who previously only used Patreon noticed a massive increase in earnings after accepting one-off payments",
-                bold: "Not just a membership",
-              },
-              {
-                text: "6 new languages We now support Spanish, French,Italian, German and Ukrainian-making it easier for your global audience to support you.",
-                bold: "6 new languages",
-              },
-              {
-                text: "Email marketing Instead of paying separately for email marketing tools like Mailchimp,send unlimited emails to your fans for free.",
-                bold: "Email marketing",
-              },
-              {
-                text: "Being friendly converts ICYMI, we make it simple and fun for your supporters. While you cannot put a number on feelings, it tends to show on the results.",
-                bold: "Being friendly converts",
-              },
-              {
-                text: "Your privacy comes first Receive support safely without disclosing your identity or address. We'll do the heavy-lifting.",
-                bold: "Your privacy comes first",
-              },
-            ].map((item, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <p className="text-black">
-                  {item.text.split(item.bold).map((part, i, arr) => (
-                    <React.Fragment key={i}>
-                      {part}
-                      {i < arr.length - 1 && <strong>{item.bold}</strong>}
-                    </React.Fragment>
-                  ))}
-                </p>
-              </div>
-            ))}
+      <div className="bg-beige-100 mt-[50px] flex items-center justify-center p-6">
+        <div className="bg-white  w-[1128px] h-[742px] rounded-2xl shadow-lg p-10">
+          <h2 className="text-3xl font-bold text-center text-gray-900">
+            Make 20% or more,
+          </h2>
+          <h3 className="text-xl text-center text-gray-500 mt-2">
+            compared to other platforms.
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <Feature
+              icon="📅"
+              title="Not just a membership"
+              description="Creators who previously only used Patreon noticed a massive increase in earnings after accepting one-off payments."
+              titleClass="text-black"
+            />
+            <Feature
+              icon="🌍"
+              title="6 new languages"
+              description="We now support Spanish, French, Italian, German and Ukrainian—making it easier for your global audience to support you."
+              titleClass="text-black"
+            />
+            <Feature
+              icon="✉️"
+              title="Email marketing"
+              description="Instead of paying separately for email marketing tools like Mailchimp, send unlimited emails to your fans for free."
+              titleClass="text-black"
+            />
+            <Feature
+              icon="❤️"
+              title="Being friendly converts"
+              description="ICYMI, we make it simple and fun for your supporters. While you cannot put a number on feelings, it tends to show on the results."
+              titleClass="text-black"
+            />
+            <Feature
+              icon="🔒"
+              title="Your privacy comes first"
+              description="Receive fan support safely without disclosing your identity or address. We’ll do the heavy-lifting."
+              titleClass="text-black"
+            />
           </div>
         </div>
       </div>
+      <div>
+        <footer>Buy me coffee</footer>
+      </div>
+    </div>
+  );
+}
+function Feature({ icon, title, description, titleClass = "" }: FeatureProps) {
+  return (
+    <div className="flex flex-col   p-4">
+      <div className="text-4xl">{icon}</div>
+      <h4 className={`font-semibold text-lg mt-2 ${titleClass}`}>{title}</h4>
+      <p className="text-gray-600 mt-1">{description}</p>
     </div>
   );
 }
