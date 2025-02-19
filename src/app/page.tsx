@@ -1,4 +1,6 @@
-import { Sree_Krushnadevaraya } from "next/font/google";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Youtube, Instagram } from "lucide-react";
 import React from "react";
 
 export type Icon = string;
@@ -23,46 +25,46 @@ export default function Home() {
         Accept support. Start a membership. Setup a shop. It's easier than you
         think.
       </p>
-      <button className="mt-5 bg-yellow-400 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-500">
+      <button className="mt-5 bg-yellow-400 text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-yellow-500 transform hover:scale-105 transition duration-300 ease-in-out ">
         Start my page
       </button>
-      <p className="text-gray-500 mt-2 text-black">
+      <p className=" mt-2 text-black">
         It's free and takes less than a minute!
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 ">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             Cara is building a new platform for artists
           </p>
           <p className="text-gray-500">❤️ 8,780 supporters</p>
         </div>
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             Kaleigh Cohen is creating indoor cycling and strength workouts on
             YouTube!
           </p>
           <p className="text-gray-500">❤️ 4,488 supporters</p>
         </div>
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             Teacher Stefano is creating YouTube videos and Podcast
           </p>
           <p className="text-gray-500">❤️ 641 supporters</p>
         </div>
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             The Thrill Of The Thrift is creating thrifting videos
           </p>
           <p className="text-gray-500">❤️ 112 supporters</p>
         </div>
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             Beach Talk Radio is a Dinky Little Podcast
           </p>
           <p className="text-gray-500">❤️ 1,805 supporters</p>
         </div>
-        <div className="bg-white shadow-lg p-5 rounded-lg">
+        <div className="bg-white shadow-lg p-5 rounded-lg transform hover:scale-105 transition duration-300 ease-in-out">
           <p className="font-semibold text-black">
             Simple Politics is helping people have better conversations about
             politics
@@ -224,6 +226,7 @@ export default function Home() {
           </div> */}
         </div>
       </div>
+
       <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg mt-[50px] w-[1128px] h-[834px] p-6">
         <div className="text-center mb-6">
           <h2 className="text-lg font-semibold uppercase text-gray-500">
@@ -310,8 +313,8 @@ export default function Home() {
           </h1>
           <p className=" mt-4 text-black">
             Buy Me a Coffee makes it easy to publish free and exclusive content.
-            Try different formats such as audio, and make it members-only to
-            drive more memberships.
+            Try different <br /> formats such as audio, and make it members-only
+            to drive more memberships.
           </p>
         </div>
         <div>
@@ -485,7 +488,47 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <footer>Buy me coffee</footer>
+        <footer className="bg-cream px-6 py-4 flex justify-between items-center text-gray-600 text-sm">
+          <p>© Buy Me a Coffee</p>
+          <nav className="flex gap-4">
+            <a href="#" className="hover:text-black font-semibold">
+              About
+            </a>
+            <a href="#" className="hover:text-black font-semibold">
+              Help Center
+            </a>
+            <a href="#" className="hover:text-black font-semibold">
+              Apps
+            </a>
+            <div className="relative group">
+              <button className="hover:text-black font-semibold">
+                Resources ▾
+              </button>
+            </div>
+            <a href="#" className="hover:text-black font-semibold">
+              Privacy
+            </a>
+            <a href="#" className="hover:text-black font-semibold">
+              Terms
+            </a>
+          </nav>
+          <div className="flex gap-3">
+            <div className="flex gap-6 bg-cream p-4">
+              <a href="#" className="text-black hover:opacity-75">
+                <FontAwesomeIcon
+                  className="w-[32px] h-[32px]"
+                  icon={faXTwitter}
+                />
+              </a>
+              <a href="#" className="text-black hover:opacity-75">
+                <Youtube size={32} />
+              </a>
+              <a href="#" className="text-black hover:opacity-75">
+                <Instagram size={32} />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
