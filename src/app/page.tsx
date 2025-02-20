@@ -1,6 +1,8 @@
+"use client";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Youtube, Instagram } from "lucide-react";
+import { motion } from "motion/react";
 import React from "react";
 
 export type Icon = string;
@@ -72,7 +74,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" flex items-center justify-center p-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
         <div className="bg-white p-8 rounded-3xl shadow-xl  w-[1128px] h-[810px] text-center">
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
             SUPPORT
@@ -155,9 +161,13 @@ export default function Home() {
             </div>
           </div> */}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="relative mt-6 space-y-3">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
         <div className="mt-16 p-10 bg-white rounded-3xl w-[1128px] h-[834px] shadow-lg ">
           <p className="text-gray-500 uppercase text-center">Memberships</p>
           <h2 className="text-3xl font-bold text-center  text-black text-64 font-cr-bold mx-auto leading-80 w-11/12">
@@ -225,9 +235,14 @@ export default function Home() {
             </div>
           </div> */}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg mt-[50px] w-[1128px] h-[834px] p-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex flex-col items-center bg-white rounded-2xl shadow-lg mt-[50px] w-[1128px] h-[834px] p-6"
+      >
         <div className="text-center mb-6">
           <h2 className="text-lg font-semibold uppercase text-gray-500">
             Shop
@@ -301,9 +316,14 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-      </div>
+      </motion.div>
 
-      <div className="w-[1128px] h-[809.41px]  flex flex-col items-center bg-white rounded-lg shadow-md mt-[50px] p-8">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="w-[1128px] h-[809.41px]  flex flex-col items-center bg-white rounded-lg shadow-md mt-[50px] p-8"
+      >
         <div className="text-center ">
           <h3 className="text-gray-500 uppercase tracking-widest font-semibold text-sm">
             Posts, Audio & Email
@@ -400,8 +420,13 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-      </div>
-      <div className="flex justify-center items-center w-full max-w-[1600px] h-[500px]">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex justify-center items-center w-full max-w-[1600px] h-[500px]"
+      >
         <div className="p-12 text-center">
           <h1 className="text-4xl font-bold text-gray-900">
             Designed for creators,
@@ -443,9 +468,13 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bg-beige-100 mt-[50px] flex items-center justify-center p-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
         <div className="bg-white  w-[1128px] h-[742px] rounded-2xl shadow-lg p-10">
           <h2 className="text-3xl font-bold text-center text-gray-900">
             Make 20% or more,
@@ -486,8 +515,12 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 2 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
         <footer className="bg-cream px-6 py-4 flex justify-between items-center text-gray-600 text-sm">
           <p>© Buy Me a Coffee</p>
           <nav className="flex gap-4">
@@ -529,7 +562,7 @@ export default function Home() {
             </div>
           </div>
         </footer>
-      </div>
+      </motion.div>
     </div>
   );
 }
